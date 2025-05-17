@@ -8,7 +8,7 @@ const MOCK_POSTS: Post[] = [
     title: 'Como usar o ChatGPT para estudar melhor',
     description: 'Aprenda técnicas eficientes para utilizar IA como assistente de estudos e melhorar seu aprendizado.',
     category: 'Tutorial',
-    date: '12 Jun 2023',
+    date: '17 May 2025',
     icon: '📚',
     slug: 'como-usar-chatgpt-estudar'
   },
@@ -17,7 +17,7 @@ const MOCK_POSTS: Post[] = [
     title: '5 ferramentas de IA para aumentar sua produtividade',
     description: 'Conheça as melhores ferramentas de IA que podem ajudar você a otimizar seu tempo e trabalhar melhor.',
     category: 'Guia',
-    date: '10 Jun 2023',
+    date: '17 May 2025',
     icon: '⚡',
     slug: 'ferramentas-ia-produtividade'
   },
@@ -26,7 +26,7 @@ const MOCK_POSTS: Post[] = [
     title: 'Como usar IA para resolver problemas do dia a dia',
     description: 'Descubra como a inteligência artificial pode ajudar em tarefas cotidianas e simplificar sua vida.',
     category: 'Dicas',
-    date: '8 Jun 2023',
+    date: '17 May 2025',
     icon: '💡',
     slug: 'ia-problemas-dia-a-dia'
   }
