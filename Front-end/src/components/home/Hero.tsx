@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import aiHero from '../../assets/ai-hero.png.png';
 
 const Hero = () => {
   return (
@@ -51,9 +52,12 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="md:w-1/2 mt-10 md:mt-0"
           >
-            <div className="bg-white/20 backdrop-blur-lg rounded-lg p-6 aspect-square max-w-md mx-auto">
-              {/* Placeholder for illustration */}
-              <div className="w-full h-full rounded-lg bg-white/10" />
+            <div className="bg-white/20 backdrop-blur-lg rounded-lg p-6 aspect-square max-w-md mx-auto flex items-center justify-center">
+              <img
+                src={aiHero}
+                alt="Inteligência Artificial"
+                className="w-full h-full object-contain rounded-lg"
+              />
             </div>
           </motion.div>
         </div>
