@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import chatgptLogo from '../../assets/chatgpt-logo.jpg';
 
 interface Tool {
   id: string;
@@ -68,7 +69,11 @@ const RecommendedTools = () => {
             >
               <div className="flex flex-col items-center text-center">
                 <div className={`w-14 h-14 ${tool.iconColor} rounded-full flex items-center justify-center mb-5`}>
-                  <span className="text-2xl">{tool.icon}</span>
+                  {tool.name === 'ChatGPT' ? (
+                    <img src={chatgptLogo} alt="ChatGPT Logo" className="w-10 h-10 object-contain rounded-full" />
+                  ) : (
+                    <span className="text-2xl">{tool.icon}</span>
+                  )}
                 </div>
                 
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
