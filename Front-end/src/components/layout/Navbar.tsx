@@ -32,17 +32,6 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('quick-tips')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Dicas</button>
             <button onClick={() => scrollToSection('about')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Sobre</button>
           </div>
-
-          <div className="flex items-center">
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Pesquisar..."
-                className="w-full bg-gray-100 text-gray-700 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-indigo-600"
-              />
-              <MagnifyingGlassIcon className="h-5 w-5 text-gray-500 absolute right-3 top-2.5" />
-            </div>
-          </div>
         </div>
       </div>
     </motion.nav>
