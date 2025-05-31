@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import chatgptLogo from '../../assets/chatgpt-logo.jpg';
+import notionLogo from '../../assets/Notion_app_logo.png';
 
 interface Tool {
   id: string;
@@ -71,6 +72,8 @@ const RecommendedTools = () => {
                 <div className={`w-14 h-14 ${tool.iconColor} rounded-full flex items-center justify-center mb-5`}>
                   {tool.name === 'ChatGPT' ? (
                     <img src={chatgptLogo} alt="ChatGPT Logo" className="w-10 h-10 object-contain rounded-full" />
+                  ) : tool.name === 'Notion AI' ? (
+                    <img src={notionLogo} alt="Notion Logo" className="w-10 h-10 object-contain rounded-full" />
                   ) : (
                     <span className="text-2xl">{tool.icon}</span>
                   )}
