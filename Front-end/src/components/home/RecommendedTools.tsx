@@ -71,7 +71,7 @@ const RecommendedTools = () => {
               <div className="flex flex-col items-center text-center">
                 <div className={`w-14 h-14 ${tool.iconColor} rounded-full flex items-center justify-center mb-5`}>
                   {tool.name === 'ChatGPT' ? (
-                    <img src={chatgptLogo} alt="ChatGPT Logo" className="w-10 h-10 object-contain" />
+                    <img src={chatgptLogo} alt="ChatGPT Logo" className="w-10 h-10 object-contain rounded-full" />
                   ) : tool.name === 'Notion AI' ? (
                     <img src={notionLogo} alt="Notion Logo" className="w-10 h-10 object-contain" />
                   ) : (
