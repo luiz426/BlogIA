@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import studyAi from '../../assets/study-ai.png';
+import studyAi from '../../assets/study-ai.png.png';
 
 export interface Post {
   id: string;
