@@ -64,11 +64,11 @@ const Footer = () => {
           <div className='flex flex-col items-start'>
             <h3 className="text-lg font-semibold text-white mb-4 text-start">Contato</h3>
             <div className="flex flex-col space-y-2">
-              <a href="mailto:contato@iadiaria.com.br" className="flex items-center hover:text-white transition-colors">
+              <a href="mailto:iadiaria@gmail.com" className="flex items-center hover:text-white transition-colors">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                contato@iadiaria.com.br
+                iadiaria@gmail.com
               </a>
               <div className="flex items-start">
                 <svg className="w-5 h-5 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
