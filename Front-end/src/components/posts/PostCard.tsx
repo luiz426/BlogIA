@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import studyAi from '../../assets/study-ai.png.png';
+import productivityAi from '../../assets/ai-hero.png.png';
 
 export interface Post {
   id: string;
@@ -29,6 +30,8 @@ const PostCard = ({ post, index }: PostCardProps) => {
         <div className={`h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center p-6 relative`}>
           {post.id === '1' ? (
             <img src={studyAi} alt="Estudo IA" className="absolute inset-0 w-full h-full object-cover rounded-none" />
+          ) : post.id === '2' ? (
+            <img src={productivityAi} alt="Produtividade IA" className="absolute inset-0 w-full h-full object-cover rounded-none" />
           ) : (
             <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
               <span className="text-white text-4xl">{post.icon}</span>
