@@ -14,7 +14,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-gradient-to-t from-white via-gray-50 to-white">
+    <section id="newsletter" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-gradient-to-t from-white via-gray-50 to-white">
       {/* Grid background */}
       <div className="absolute inset-0 z-0" 
         style={{

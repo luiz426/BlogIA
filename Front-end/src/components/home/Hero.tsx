@@ -30,6 +30,15 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border-2 border-white text-white px-6 py-3 rounded-lg font-medium"
+                onClick={() => {
+                  const el = document.getElementById('newsletter');
+                  if (el) {
+                    window.scrollTo({
+                      top: el.offsetTop - 80,
+                      behavior: 'smooth'
+                    });
+                  }
+                }}
               >
                 Receber novidades
               </motion.button>
