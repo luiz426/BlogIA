@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import studyAi from '../../assets/study-ai.png';
 
 export interface Post {
   id: string;
@@ -25,10 +26,14 @@ const PostCard = ({ post, index }: PostCardProps) => {
       className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow"
     >
       <Link to={`/post/${post.slug}`} className="block">
-        <div className={`h-48 ${post.icon} bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center p-6`}>
-          <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-            <span className="text-white text-4xl">{post.icon}</span>
-          </div>
+        <div className={`h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center p-6`}>
+          {post.id === '1' ? (
+            <img src={studyAi} alt="Estudo IA" className="w-20 h-20 rounded-full object-cover bg-white/20" />
+          ) : (
+            <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
+              <span className="text-white text-4xl">{post.icon}</span>
+            </div>
+          )}
         </div>
         <div className="p-6">
           <div className="flex items-center space-x-2 mb-4">
