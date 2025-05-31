@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import chatgptLogo from '../../assets/chatgpt-logo.jpg';
 import notionLogo from '../../assets/Notion_app_logo.png';
 import dalleLogo from '../../assets/dall-e.jpg';
+import midjourneyLogo from '../../assets/Midjourney-logo.png';
 
 interface Tool {
   id: string;
@@ -77,6 +78,8 @@ const RecommendedTools = () => {
                     <img src={notionLogo} alt="Notion Logo" className="w-10 h-10 object-contain" />
                   ) : tool.name === 'DALL-E' ? (
                     <img src={dalleLogo} alt="DALL-E Logo" className="w-10 h-10 object-contain rounded-full" />
+                  ) : tool.name === 'Midjourney' ? (
+                    <img src={midjourneyLogo} alt="Midjourney Logo" className="w-10 h-10 object-contain rounded-full" />
                   ) : (
                     <span className="text-2xl">{tool.icon}</span>
                   )}
