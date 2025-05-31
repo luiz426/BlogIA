@@ -24,13 +24,14 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-indigo-600 text-2xl font-bold">IA Diária</span>
           </Link>
-          
-          <div className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('home')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none focus:border-none">Início</button>
-            <button onClick={() => scrollToSection('featured-posts')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Tutoriais</button>
-            <button onClick={() => scrollToSection('recommended-tools')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Ferramentas</button>
-            <button onClick={() => scrollToSection('quick-tips')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Dicas</button>
-            <button onClick={() => scrollToSection('about')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Sobre</button>
+          <div className="flex-1 flex justify-center">
+            <div className="hidden md:flex space-x-8">
+              <button onClick={() => scrollToSection('home')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none focus:border-none">Início</button>
+              <button onClick={() => scrollToSection('featured-posts')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Tutoriais</button>
+              <button onClick={() => scrollToSection('recommended-tools')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Ferramentas</button>
+              <button onClick={() => scrollToSection('quick-tips')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Dicas</button>
+              <button onClick={() => scrollToSection('about')} className="bg-white text-gray-700 hover:text-indigo-600 cursor-pointer border-none outline-none focus:outline-none">Sobre</button>
+            </div>
           </div>
         </div>
       </div>
